@@ -24,12 +24,11 @@ You should have installed the following software on your local machine
 - Bring up the project with the CLI-command (Repeat the following step after each reboot)
 ```
 docker-compose up -d
-
-- Add the following lines to wp-config.php
 ```
-define( 'WP_HOME', 'http://example.com' );
-define( 'WP_SITEURL', 'http://example.com' );
+- Add the following lines to wp-config.php 
 ```
+define( 'WP_HOME', 'https://<YOUR_PRIVATE_URL>' );
+define( 'WP_SITEURL', 'https://<YOUR_PRIVATE_URL' );
 ```
 ### Install dependecies
 ```
