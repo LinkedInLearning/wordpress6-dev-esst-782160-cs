@@ -1,6 +1,14 @@
 {
   "extensions": [
-    "GitHub.github-vscode-theme"
+    "GitHub.github-vscode-theme",
+    "bmewburn.vscode-intelephense-client",
+    "shevaua.phpcs",
+    "persoderlind.vscode-phpcbf",
+    "yogensia.searchwpdocs",
+    "johnbillion.vscode-wordpress-hooks",
+    "wordpresstoolbox.wordpress-toolbox",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode-remote.remote-containers"
     // Additional Extensions Here
   ],
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc"
