@@ -3,7 +3,6 @@ node_modules
 vendor
 .tmp
 npm-debug.log
-.env
 
 htdocs/*
 !htdocs/wp-content

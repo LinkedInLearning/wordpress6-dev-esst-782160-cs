@@ -12,7 +12,7 @@
     // Additional Extensions Here
   ],
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-  "postCreateCommand" : ["composer install", "npm install"],
+  "postCreateCommand" : "composer install && npm install",
   "postStartCommand": "make up"
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
