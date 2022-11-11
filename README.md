@@ -1,10 +1,6 @@
-# [DE-Kursname hier eintragen]
+# WordPress 6 für Entwickler*innen
 
-Dies ist das Repository für den **LinkedIn Learning** Kurs `[COURSENAME]`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
-
-![COURSENAME][lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
-
-[COURSEDESCRIPTION]
+Dies ist das Repository für den **LinkedIn Learning** Kurs `WordPress 6 für Entwickler*innen`. Den gesamten Kurs finden Sie auf LinkedIn Learning.
 
 > **_Hinweis:_**  Die folgenden Hinweise 
 sind in englischer Sprache. Englisch ist die _Lingua franca_ in der WordPress-Programmierung. Im Training gehe ich auf die einzelnen Abschnitte ein und erkläre sie auf deutsch.
