@@ -20,10 +20,16 @@ You should have installed the following software on your local machine
 ### Bringing up the project
 - Fork this repo and clone it to your local machine.
 
-- Copy the file _.envSAMPLE_ to _.env_ and fill in yout local values.
+- Edit the _.env_ fill to fit to your needs.
 - Bring up the project with the CLI-command (Repeat the following step after each reboot)
 ```
 docker-compose up -d
+
+- Add the following lines to wp-config.php
+```
+define( 'WP_HOME', 'http://example.com' );
+define( 'WP_SITEURL', 'http://example.com' );
+```
 ```
 ### Install dependecies
 ```
