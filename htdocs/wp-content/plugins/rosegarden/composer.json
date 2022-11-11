@@ -1,0 +1,12 @@
+{
+    "name": "rose/rosegarden",
+    "type": "library",
+    "autoload": {
+      "classmap": [
+        "inc/"
+      ],
+      "files": [
+        "load.php"
+      ]
+    }
+  }
