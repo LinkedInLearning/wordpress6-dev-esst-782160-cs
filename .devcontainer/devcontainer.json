@@ -11,7 +11,8 @@
     "ms-vscode-remote.remote-containers"
     // Additional Extensions Here
   ],
-  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc"
-  // Update welcome text and set terminal prompt to '$ '
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+  "postCreateCommand" : ["composer install", "npm install"],
+  "postStartCommand": "make up"
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
