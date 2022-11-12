@@ -15,4 +15,6 @@ htdocs/wp-content/plugins/*
 !htdocs/wp-content/themes
 htdocs/wp-content/themes/*
 !htdocs/wp-content/themes/rosegarden
+!htdocs/wp-content/themes/rosegarden21
+
 
