@@ -1,11 +1,9 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+   "name": "wordpress6dev",
+   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers/features/php:1": {
-      "version": "7.4.0"
-    }
+    "ghcr.io/devcontainers/features/php:1": {}
   },
-
   "extensions": [
     "GitHub.github-vscode-theme",
     "bmewburn.vscode-intelephense-client",
