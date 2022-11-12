@@ -15,15 +15,12 @@ class Metabox {
 	 * Set up and add the meta box.
 	 */
 	public static function add() {
-		$screens = array( 'post', 'wporg_cpt' );
-		foreach ( $screens as $screen ) {
-			add_meta_box(
-				'rosegarden-metabox',               // Unique ID.
-				__( 'Rosegarden', 'rosegarden' ),   // Box title.
-				array( self::class, 'render' ),       // Content callback, must be of type callable.
-				'rosegarden'                        // Post type.
-			);
-		}
+		add_meta_box(
+			'rosegarden-metabox',               // Unique ID.
+			__( 'Rosegarden', 'rosegarden' ),   // Box title.
+			array( self::class, 'render' ),     // Content callback, must be of type callable.
+			'rosegarden'                        // Post type.
+		);
 	}
 
 	/**
