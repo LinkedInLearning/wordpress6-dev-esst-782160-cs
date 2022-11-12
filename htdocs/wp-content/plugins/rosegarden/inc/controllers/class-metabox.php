@@ -44,21 +44,13 @@ class Metabox {
 	 * @param int $post_id  The post ID.
 	 */
 	public static function save( $post_id ) {
-		$request_body = file_get_contents( 'php://input' );
-		parse_str( $request_body, $param );
+		check_admin_referer( 'update-post_' . $post_id );
 
-		if ( empty( $param['nonce'] ) || ! wp_verify_nonce( $param['nonce'], 'rosegarden-nonce' ) ) {
-			return false;
-		}
-
-		if ( array_key_exists( 'rosegarden_title', $param ) ) {
-			update_post_meta(
-				$post_id,
-				'_rosegarden',
-				$param['rosegarden_title']
-			);
-		}
+		update_post_meta(
+			$post_id,
+			'_rosegarden',
+			sanitize_text_field( $_POST['rosegarden_title'] )
+		);
 	}
-
 
 }
