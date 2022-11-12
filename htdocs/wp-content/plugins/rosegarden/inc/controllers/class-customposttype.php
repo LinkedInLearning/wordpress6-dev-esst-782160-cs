@@ -1,4 +1,5 @@
 <?php
+// phpcs:ignoreFile WordPress.Security.NonceVerification.Missing
 /**
  * Controller for metaboxes.
  *

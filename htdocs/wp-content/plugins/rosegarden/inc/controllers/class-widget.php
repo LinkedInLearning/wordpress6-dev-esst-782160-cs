@@ -1,4 +1,5 @@
 <?php
+// phpcs:ignoreFile WordPress.Security.EscapeOutput.OutputNotEscape
 /**
  * Controller for a widget.
  *
@@ -18,7 +19,7 @@ class Widget extends \WP_Widget {
 	public static function init() {
 		register_widget( get_called_class() );
 	}
-	
+
 	/**
 	 * Constructs the widget.
 	 */
@@ -35,6 +36,11 @@ class Widget extends \WP_Widget {
 		);
 	}
 
+	/**
+	 * Settings for widget.
+	 *
+	 * @var array
+	 */
 	public $args = array(
 		'before_title'  => '<h4 class="widgettitle">',
 		'after_title'   => '</h4>',
@@ -42,6 +48,13 @@ class Widget extends \WP_Widget {
 		'after_widget'  => '</div></div>',
 	);
 
+	/**
+	 * Initializes the widget.
+	 *
+	 * @param array $args Holds settings.
+	 * @param array $instance Holds actual data in widget.
+	 * @return void
+	 */
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
 		if ( ! empty( $instance['title'] ) ) {
@@ -53,9 +66,14 @@ class Widget extends \WP_Widget {
 		echo $args['after_widget'];
 	}
 
+	/**
+	 * Display the form in the backend.
+	 *
+	 * @param array $instance Data of the widget.
+	 */
 	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'text_domain' );
-		$text  = ! empty( $instance['text'] ) ? $instance['text'] : esc_html__( '', 'text_domain' );
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : '';
+		$text  = ! empty( $instance['text'] ) ? $instance['text'] : '';
 		?>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html__( 'Title:', 'text_domain' ); ?></label>
@@ -68,6 +86,12 @@ class Widget extends \WP_Widget {
 		<?php
 	}
 
+	/**
+	 * Performs the update of data.
+	 *
+	 * @param array $new_instance New data.
+	 * @param array $old_instance Old data.
+	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance          = array();
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
