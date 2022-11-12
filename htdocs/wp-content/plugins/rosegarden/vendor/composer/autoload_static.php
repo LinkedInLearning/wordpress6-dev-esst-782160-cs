@@ -6,17 +6,14 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitacd4c7e114a343ab0ab2d4769878b99c
 {
-    public static $files = array (
-        '5faf15c8a639d7e55b90df289e55b508' => __DIR__ . '/../..' . '/load.php',
-    );
-
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Rosegarden\\Controllers\\Action' => __DIR__ . '/../..' . '/inc/controllers/class-action.php',
-        'Rosegarden\\Controllers\\Metabox' => __DIR__ . '/../..' . '/inc/controllers/class-metabox.php',
+        'Rosegarden\\Controllers\\CustomPostType' => __DIR__ . '/../..' . '/inc/controllers/class-customposttype.php',
         'Rosegarden\\Controllers\\Page' => __DIR__ . '/../..' . '/inc/controllers/class-page.php',
         'Rosegarden\\Controllers\\Settings' => __DIR__ . '/../..' . '/inc/controllers/class-settings.php',
         'Rosegarden\\Controllers\\Shortcode' => __DIR__ . '/../..' . '/inc/controllers/class-shortcode.php',
+        'Rosegarden\\Controllers\\Translation' => __DIR__ . '/../..' . '/inc/controllers/class-translation.php',
         'Rosegarden\\Controllers\\Widget' => __DIR__ . '/../..' . '/inc/controllers/class-widget.php',
     );
 

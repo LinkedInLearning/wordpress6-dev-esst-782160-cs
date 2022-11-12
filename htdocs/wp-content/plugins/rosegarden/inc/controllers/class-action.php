@@ -1,6 +1,6 @@
 <?php
 /**
- * Controller for the AJAX actions..
+ * Controller for the AJAX actions.
  *
  * @package Rosegarden
  */

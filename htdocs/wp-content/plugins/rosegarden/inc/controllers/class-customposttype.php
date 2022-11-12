@@ -10,11 +10,30 @@ namespace Rosegarden\Controllers;
 /**
  * The Controller class for metaboxes
  */
-class Metabox {
+class CustomPostType {
+
+	/**
+	 * Adds custom post type.
+	 */
+	public static function init() {
+		register_post_type(
+			'rosegarden',
+			array(
+				'labels'      => array(
+					'name'          => __( 'Rosegarden', 'rosegarden' ),
+					'singular_name' => __( 'Rosegarden', 'rosegarden' ),
+				),
+				'public'      => true,
+				'has_archive' => true,
+			)
+		);
+	}
+
+
 	/**
 	 * Set up and add the meta box.
 	 */
-	public static function add() {
+	public static function add_metabox() {
 		add_meta_box(
 			'rosegarden-metabox',               // Unique ID.
 			__( 'Rosegarden', 'rosegarden' ),   // Box title.
@@ -43,8 +62,10 @@ class Metabox {
 	 *
 	 * @param int $post_id  The post ID.
 	 */
-	public static function save( $post_id ) {
-		check_admin_referer( 'update-post_' . $post_id );
+	public static function save_metabox( $post_id ) {
+		if ( empty( $_POST['rosegarden_title'] ) ) {
+			return;
+		}
 
 		update_post_meta(
 			$post_id,

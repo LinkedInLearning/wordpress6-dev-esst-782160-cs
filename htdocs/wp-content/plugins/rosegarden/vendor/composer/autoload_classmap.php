@@ -8,9 +8,10 @@ $baseDir = dirname($vendorDir);
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Rosegarden\\Controllers\\Action' => $baseDir . '/inc/controllers/class-action.php',
-    'Rosegarden\\Controllers\\Metabox' => $baseDir . '/inc/controllers/class-metabox.php',
+    'Rosegarden\\Controllers\\CustomPostType' => $baseDir . '/inc/controllers/class-customposttype.php',
     'Rosegarden\\Controllers\\Page' => $baseDir . '/inc/controllers/class-page.php',
     'Rosegarden\\Controllers\\Settings' => $baseDir . '/inc/controllers/class-settings.php',
     'Rosegarden\\Controllers\\Shortcode' => $baseDir . '/inc/controllers/class-shortcode.php',
+    'Rosegarden\\Controllers\\Translation' => $baseDir . '/inc/controllers/class-translation.php',
     'Rosegarden\\Controllers\\Widget' => $baseDir . '/inc/controllers/class-widget.php',
 );

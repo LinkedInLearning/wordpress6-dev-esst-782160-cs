@@ -12,6 +12,16 @@ namespace Rosegarden\Controllers;
  */
 class Widget extends \WP_Widget {
 
+	/**
+	 * Self registers this class to keep the pluginfile clean.
+	 */
+	public static function init() {
+		register_widget( get_called_class() );
+	}
+	
+	/**
+	 * Constructs the widget.
+	 */
 	public function __construct() {
 		parent::__construct(
 			'rosegarden',  // Base ID.
