@@ -5,7 +5,7 @@
  * @package Rosegarden
  */
 
-namespace Rosegarden\Controller;
+namespace Rosegarden\Controllers;
 
 /**
  * The Controller class for the backend page.
