@@ -31,39 +31,26 @@ class Widget extends \WP_Widget {
 		add_action(
 			'widgets_init',
 			function() {
-				register_widget( 'My_Widget' );
+				register_widget( __(' Rosegarden', 'rosegarden') );
 			}
 		);
 	}
-
-	/**
-	 * Settings for widget.
-	 *
-	 * @var array
-	 */
-	public $args = array(
-		'before_title'  => '<h4 class="widgettitle">',
-		'after_title'   => '</h4>',
-		'before_widget' => '<div class="widget-wrap">',
-		'after_widget'  => '</div></div>',
-	);
 
 	/**
 	 * Initializes the widget.
 	 *
 	 * @param array $args Holds settings.
 	 * @param array $instance Holds actual data in widget.
-	 * @return void
 	 */
 	public function widget( $args, $instance ) {
-		echo $args['before_widget'];
-		if ( ! empty( $instance['title'] ) ) {
-			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
-		}
-		echo '<div class="textwidget">';
-		echo esc_html__( $instance['text'], 'text_domain' );
-		echo '</div>';
-		echo $args['after_widget'];
+
+		load_template(
+			__DIR__ . '/../views/widget.php',
+			true,
+			$instance
+		);
+
+	
 	}
 
 	/**
