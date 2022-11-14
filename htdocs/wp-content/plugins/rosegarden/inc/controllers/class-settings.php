@@ -5,7 +5,7 @@
  * @package Rosegarden
  */
 
-namespace Rosegarden\Controller;
+namespace Rosegarden\Controllers;
 
 /**
  * The Controller class for the backend page.
@@ -31,8 +31,8 @@ class Settings {
 	 */
 	public function add_settings_page() {
 		add_menu_page(
-			'Rosengarten',
-			'Rosengarten',
+			__( 'Rosegarden', 'rosegarden' ),
+			__( 'Rosegarden', 'rosegarden' ),
 			'manage_options',
 			'rosegarden',
 			array( $this, 'render' ),
@@ -68,7 +68,7 @@ class Settings {
 
 		add_settings_section(
 			'rosegarden_setting_section_id', // ID.
-			'Rosegarden', // Title.
+			__( 'Rosegarden', 'rosegarden' ), // Title.
 			array( $this, 'print_section_info' ), // Callback.
 			'rosegarden-setting-admin' // Page.
 		);

@@ -43,6 +43,6 @@
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map yarn.lock"
   },
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^8.0.0"
   }
 }

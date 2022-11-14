@@ -4,9 +4,6 @@
     "autoload": {
       "classmap": [
         "inc/"
-      ],
-      "files": [
-        "load.php"
       ]
     }
   }

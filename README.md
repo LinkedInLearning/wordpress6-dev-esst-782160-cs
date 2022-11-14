@@ -46,4 +46,6 @@ npx eslint path/to/file.js
 ## WP-CLI Commands
 ```
 wp i18n make-pot inc  languages/rosegarden.pot  --domain=rosegarden
+wp scaffold child-theme rosegarden21 --parent_theme=twentytwentyone
+
 ```
