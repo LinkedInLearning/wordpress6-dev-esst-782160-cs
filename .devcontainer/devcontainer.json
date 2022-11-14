@@ -1,9 +1,12 @@
 {
-   "name": "wordpress6dev",
-   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "name": "wordpress6dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/php:1": {
-       "version": "latest"
+      "version": "7.4"
+    },
+    "ghcr.io/devcontainers/features/node:1.1.1": {
+      "version": "19.0"
     }
   },
   "extensions": [
