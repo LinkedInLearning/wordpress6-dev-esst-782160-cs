@@ -2,18 +2,23 @@
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs `WordPress 6 für Entwickler*innen`. Den gesamten Kurs finden Sie auf LinkedIn Learning.
 
+## Automatisches Setup mit Codespace
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=564877154&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestEurope)
+
+## Manuelles Setup
+
 > **_Hinweis:_**  Die folgenden Hinweise 
 sind in englischer Sprache. Englisch ist die _Lingua franca_ in der WordPress-Programmierung. Im Training gehe ich auf die einzelnen Abschnitte ein und erkläre sie auf deutsch.
 
-## Requirements
+### Requirements
 You should have installed the following software on your local machine
 - Visual Studio Code ( or some other IDE)
 - docker
 - php
 - composer
 - node
-## Installation
-### Bringing up the project
+### Installation
+#### Bringing up the project
 - Fork this repo and clone it to your local machine.
 
 - Edit the _.env_ fill to fit to your needs.
@@ -26,7 +31,7 @@ docker-compose up -d
 define( 'WP_HOME', 'https://<YOUR_PRIVATE_URL>' );
 define( 'WP_SITEURL', 'https://<YOUR_PRIVATE_URL' );
 ```
-### Install dependecies
+#### Install dependecies
 ```
 npm install
 composer install
