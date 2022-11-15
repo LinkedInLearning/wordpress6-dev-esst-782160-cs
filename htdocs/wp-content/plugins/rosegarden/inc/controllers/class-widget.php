@@ -1,5 +1,4 @@
 <?php
-// phpcs:ignoreFile WordPress.Security.EscapeOutput.OutputNotEscape
 /**
  * Controller for a widget.
  *
@@ -31,7 +30,7 @@ class Widget extends \WP_Widget {
 		add_action(
 			'widgets_init',
 			function() {
-				register_widget( __(' Rosegarden', 'rosegarden') );
+				register_widget( __( 'Rosegarden', 'rosegarden' ) );
 			}
 		);
 	}
@@ -50,7 +49,6 @@ class Widget extends \WP_Widget {
 			$instance
 		);
 
-	
 	}
 
 	/**
