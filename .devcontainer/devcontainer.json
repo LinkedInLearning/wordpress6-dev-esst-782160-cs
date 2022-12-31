@@ -20,7 +20,9 @@
 				"johnbillion.vscode-wordpress-hooks",
 				"ms-azuretools.vscode-docker",
 				"dbaeumer.vscode-eslint",
-				"neilbrayfield.php-docblocker"
+				"neilbrayfield.php-docblocker",
+				"shevaua.phpcs",
+				"ms-vscode.makefile-tools"
 			]
 		}
 	},
