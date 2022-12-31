@@ -5,16 +5,20 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs `WordPress 6 für En
 ## Automatisches Setup mit Codespace
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=564877154&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestEurope)
 
-Warten Sie anschließend bis zu zehn Minuten, bis der Codespace eingerichtet *und* WordPress vollständig installiert ist. Die Installation von WordPress passiert im Hintergrund, über das Ergebnis werden Sie nicht informiert. Sobald Ihre lokale WordPress-Installation erfolgt ist, können Sie unter dem Reiter 'Ports' auf Ihre Seite zugreifen.
-
-Bevor Sie WordPress im Browser installieren, müssen Sie noch in der Datei _wp-config.php_ Ihre lokale WordPress-URL angeben. Sie können das an beliebiger Stelle eintragen, z.B. fast am Ende.
+### Weiterer Ablauf
+1. Der Codespace wird innerhalb von ca. fünf Minuten erstellt und es öffnet sich VS Code im Broser
+1. ```postCreateCommand.sh``` wird automatisch ausgeführt. Im Verzeichnisbaum erscheinen die Verzeichnisse _node_modules_ und _vendor_
+1. ```docker-comose up``` wird automatisch ausgeführt und WordPress wird installiert. Im Verzeichnisbaum erscheinen die Verzeichnisse _htdocs/wp-admin_, etc. Dieser Vorgang kann bis zu zehn Minuten dauert.
+1. Sobald WordPress im Browser zur Verfügung steht, tragen Sie bitte Ihre persönliche URL in die _wp-config.php_ ein.
+ Sie können das an beliebiger Stelle eintragen, z.B. fast am Ende. Ihre URL finden Sie im Reiter _PORTS_ neben dem _TERMIAL_.
 ```
 define( 'WP_SITEURL', 'https://IHRE_PERSOENLICHE_ADRESSE_WIE_IM_REITER_PORTS.preview.app.github.dev/');
 define( 'WP_HOME', 'https://IHRE_PERSOENLICHE_ADRESSE_WIE_IM_REITER_PORTS.preview.app.github.dev/' );
 /* That's all, stop editing! Happy publishing. */
 ```
+1. Installieren Sie WordPress über den Browser.
 
-Intelephense wird sich bei der ersten Nutzung des Codespaces noch beschweren. Schließen Sie den Browsertab und gehen erneut in den Codespace, damit Intelephense alle Dateien indiziert. Die Indizieurng dauert einige Minuten.
+Eventuell wird sich Intelephense bei der ersten Nutzung des Codespaces noch beschweren. Schließen Sie den Browsertab und gehen erneut in den Codespace, damit Intelephense alle Dateien indiziert. Die Indizieurng dauert einige Minuten.
 
 ## Manuelles Setup
 
@@ -51,7 +55,7 @@ composer install
 ## Linting
 ### php
 ```
-phpcs -s path/to/file.php
+./vendor/bin/phpcs -s path/to/file.php
 ```
 
 ### JavaScript
