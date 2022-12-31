@@ -11,6 +11,7 @@ update-wp-config:
 	sed -i '$(LINE_NUMBER)r scripts/wp-config-addendum.txt' htdocs/wp-config.php && sed -i -e "s/CODESPACE_NAME/$(CODESPACE_NAME)/g"  htdocs/wp-config.php
 
 install:
+	chmod 777 htdocs/ -R && make update-wp-config && \
 	docker run -it --rm \
     --volumes-from wp6-training \
     --network container:wp6-training \
