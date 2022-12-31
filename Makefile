@@ -17,7 +17,8 @@ install:
     -e WORDPRESS_DB_USER=wordpress \
     -e WORDPRESS_DB_PASSWORD=wordpress \
     -e WORDPRESS_DB_HOST=db \
-    wordpress:cli wp core install --url=https://$(CODESPACE_NAME) --title=WordPress --admin_user=admin --admin_password=password --admin_email=mail@example.com --locale=de_DE
+    wordpress:cli wp core install --url=https://$(CODESPACE_NAME) --title=WordPress --admin_user=admin --admin_password=password --admin_email=mail@example.com --locale=de_DE \
+    make set-language-de
     
 set-language-de:
 	docker run -it --rm \
