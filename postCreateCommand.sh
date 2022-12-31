@@ -11,5 +11,5 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
 
-echo "Start docker"
+echo "Starting docker"
 docker-compose up -d
