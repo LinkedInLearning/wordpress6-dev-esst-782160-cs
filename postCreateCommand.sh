@@ -12,4 +12,4 @@ chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
 
 echo "Start docker"
-docker-comose up -d
+docker-compose up -d
