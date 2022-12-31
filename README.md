@@ -6,7 +6,7 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs `WordPress 6 für En
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=564877154&machine=basicLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestEurope)
 
 ### Weiterer Ablauf
-1. Der Codespace wird innerhalb von ca. fünf Minuten erstellt und es öffnet sich VS Code im Broser
+1. Der Codespace wird innerhalb von ca. fünf Minuten erstellt und es öffnet sich VS Code im Browser
 1. ```postCreateCommand.sh``` wird automatisch ausgeführt. Im Verzeichnisbaum erscheinen die Verzeichnisse _node_modules_ und _vendor_
 1. ```docker-comose up``` wird automatisch ausgeführt und WordPress wird installiert. Im Verzeichnisbaum erscheinen die Verzeichnisse _htdocs/wp-admin_, etc. Dieser Vorgang kann bis zu zehn Minuten dauern.
 1. Sobald WordPress im Browser zur Verfügung steht, tragen Sie bitte Ihre persönliche URL in die _wp-config.php_ ein.
@@ -16,7 +16,7 @@ define( 'WP_SITEURL', 'https://IHRE_PERSOENLICHE_ADRESSE_WIE_IM_REITER_PORTS.pre
 define( 'WP_HOME', 'https://IHRE_PERSOENLICHE_ADRESSE_WIE_IM_REITER_PORTS.preview.app.github.dev/' );
 /* That's all, stop editing! Happy publishing. */
 ```
-1. Installieren Sie WordPress über den Browser.
+5. Installieren Sie WordPress über den Browser.
 
 Eventuell wird sich Intelephense bei der ersten Nutzung des Codespaces noch beschweren. Schließen Sie den Browsertab und gehen erneut in den Codespace, damit Intelephense alle Dateien indiziert. Die Indizieurng dauert einige Minuten.
 
