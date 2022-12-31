@@ -28,7 +28,8 @@
 	// For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
 	"forwardPorts": [
 		8080,
-		3306
+		3306,
+		8081
 	],
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:1": {}
@@ -36,7 +37,18 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
-	"postCreateCommand": "./postCreateCommand.sh",
+	"postCreateCommand": "./scripts/postCreateCommand.sh",
+	"portsAttributes": {
+		"3306": {
+			"label": "Database (intern)"
+		},
+		"8080": {
+			"label": "WordPress"
+		},
+		"8081": {
+			"label": "phpMyAmdin"
+		}
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"

@@ -14,6 +14,7 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs `WordPress 6 für En
 ```
 define( 'WP_SITEURL', 'https://IHRE_PERSOENLICHE_ADRESSE_WIE_IM_REITER_PORTS.preview.app.github.dev/');
 define( 'WP_HOME', 'https://IHRE_PERSOENLICHE_ADRESSE_WIE_IM_REITER_PORTS.preview.app.github.dev/' );
+define( 'FS_METHOD', 'direct' ); // for auto-updating plugins and themes
 /* That's all, stop editing! Happy publishing. */
 ```
 5. Installieren Sie WordPress über den Browser.
