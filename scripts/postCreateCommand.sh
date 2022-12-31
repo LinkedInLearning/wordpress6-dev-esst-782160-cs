@@ -12,9 +12,9 @@ docker-compose up -d
 file="htdocs/wp-config.php"
 while test ! -f "$file"
 do
-  echo "HI" >> hi.txt
+  whoami >> hi.txt
   sleep 1
 done
 
 sudo chmod 777 htdocs/ -R 
-make update-wp-config install
+sudo make update-wp-config install

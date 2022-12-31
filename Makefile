@@ -17,7 +17,16 @@ install:
     -e WORDPRESS_DB_USER=wordpress \
     -e WORDPRESS_DB_PASSWORD=wordpress \
     -e WORDPRESS_DB_HOST=db \
-    wordpress:cli wp core install --url=https://$(CODESPACE_NAME) --title=WordPress --admin_user=admin --admin_password=password --admin_email=mail@example.com && /usr/local/bin/wp language core install de_DE --activate
+    wordpress:cli wp core install --url=https://$(CODESPACE_NAME) --title=WordPress --admin_user=admin --admin_password=password --admin_email=mail@example.com --locale=de_DE
+    
+set-language-de:
+	docker run -it --rm \
+    --volumes-from wp6-training \
+    --network container:wp6-training \
+    -e WORDPRESS_DB_USER=wordpress \
+    -e WORDPRESS_DB_PASSWORD=wordpress \
+    -e WORDPRESS_DB_HOST=db \
+    wordpress:cli wp language core install de_DE --activate
 
 cli:
 	docker run -it --rm \
