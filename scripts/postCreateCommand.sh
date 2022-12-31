@@ -8,8 +8,3 @@ echo xdebug.log_level=0 | sudo tee -a /usr/local/etc/php/conf.d/xdebug.ini
 
 echo "Starting docker"
 docker-compose up -d
-
-
-make update-wp-config
-
-make install
