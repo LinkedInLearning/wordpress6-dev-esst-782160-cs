@@ -34,11 +34,6 @@ You should have installed the following software on your local machine
 ```
 docker-compose up -d
 ```
-- Add the following lines to wp-config.php 
-```
-define( 'WP_HOME', 'https://<YOUR_PRIVATE_URL>' );
-define( 'WP_SITEURL', 'https://<YOUR_PRIVATE_URL' );
-```
 #### Install dependecies
 ```
 npm install
@@ -54,11 +49,4 @@ composer install
 ### JavaScript
 ```
 npx eslint path/to/file.js
-```
-
-## WP-CLI Commands
-```
-wp i18n make-pot inc  languages/rosegarden.pot  --domain=rosegarden
-wp scaffold child-theme rosegarden21 --parent_theme=twentytwentyone
-
 ```
