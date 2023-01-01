@@ -30,3 +30,6 @@ done
 
 make set-language-de
 make delete-akismet
+
+echo export PATH=\"\$PATH:/$CODESPACE_VSCODE_FOLDER/vendor/bin\" >> ~/.bashrc
+source ~/.bashrc

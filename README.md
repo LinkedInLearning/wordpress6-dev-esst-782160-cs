@@ -33,14 +33,3 @@ docker-compose up -d
 npm install
 composer install
 ```
-
-## Linting
-### php
-```
-./vendor/bin/phpcs -s path/to/file.php
-```
-
-### JavaScript
-```
-npx eslint path/to/file.js
-```
