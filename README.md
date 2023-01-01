@@ -5,13 +5,9 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs `WordPress 6 für En
 ## Automatisches Setup mit Codespace (empfohlen)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=564877154&machine=largePremiumLinux&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestEurope)
 
-Der Codespace wird innerhalb von ca. zwei bis drei Minuten erstellt und es öffnet sich VS Code im Browser. Anschließend werden Abhängigkeiten via _composer_ und _npm_ geladen, Erweiterungen für VS Code werden eingebunden und WordPress wird heruntergeladen. Dieser Vorgang kann weitere zwei bis drei Minuten dauern.
+Der Codespace wird innerhalb von ca. zwei bis drei Minuten erstellt und es öffnet sich VS Code im Browser. Anschließend werden Abhängigkeiten via _composer_ und _npm_ geladen, Erweiterungen für VS Code werden eingebunden und WordPress wird installiert. Dieser Vorgang dauert erstmalig weitere zwei bis drei Minuten.
 
-Sobald das Terminal vom _postCreateCommand_ wieder freigegeben ist, führen Sie bitte einmalig 
-```make install``` aus. Damit wird WordPress installiert.
-
-Anschließend können Sie Ihren Codespace nutzen und später weitaus schneller neu laden.
-
+Sobald das Terminal vom _postCreateCommand_ wieder freigegeben ist, ist Ihre lokale Entwicklungsumgebung in der Cloud einsatzbereit. Ihre WordPress-Installation ist im Reiter _Ports_ verlinkt, ins Backend können Sie sich mit _admin_/_password_ einloggen. DIe Zugangsdaten finden Sie auch im _Makefile_.
 
 ## Manuelles Setup
 
