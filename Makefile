@@ -1,7 +1,7 @@
 up:
 	docker-compose up -d
 shell:
-	docker-compose exec wp-training bash
+	docker-compose exec wordpress bash
 
 stop:
 	docker-compose stop
@@ -42,6 +42,6 @@ node:
 	docker run -it --rm \
     --volumes-from wp6-training \
     --network container:wp6-training \
-    --workdir /var/www/html/wp-content/themes/rosegarden \
+    --workdir /var/www/html/wp-content/plugins/rosegarden \
     node:19 bash
 
