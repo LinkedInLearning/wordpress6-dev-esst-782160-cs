@@ -53,7 +53,7 @@ class CustomPostType {
 			__DIR__ . '/../views/metabox.php',
 			true,
 			array(
-				'value' => get_post_meta( $post->ID, '_rosegarden', true ),
+				'rosegarden_title' => get_post_meta( $post->ID, '_rosegarden_title', true ),
 			)
 		);
 	}
@@ -70,7 +70,7 @@ class CustomPostType {
 
 		update_post_meta(
 			$post_id,
-			'_rosegarden',
+			'_rosegarden_title',
 			sanitize_text_field( $_POST['rosegarden_title'] )
 		);
 	}
