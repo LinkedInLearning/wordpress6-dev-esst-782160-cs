@@ -18,7 +18,7 @@ Sie benötigen die folgende Software auf Ihrem Computer
 - php
 - evtl. [Composer](https://getcomposer.org/)
 - evtl. [Node](https://nodejs.org)
-- 
+
 ### Installation
 #### Hochfahren des Projektes
 - ggf. forken Sie dieses Repo
