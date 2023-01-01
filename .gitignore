@@ -9,7 +9,7 @@ htdocs/*
 htdocs/wp-content/*
 !htdocs/wp-content/plugins
 htdocs/wp-content/plugins/*
-!htdocs/wp-content/plugins/my-plugin
+!htdocs/wp-content/plugins/my-first-plugin
 !htdocs/wp-content/plugins/rosegarden
 
 !htdocs/wp-content/themes

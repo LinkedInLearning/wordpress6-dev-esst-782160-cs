@@ -2,11 +2,11 @@
 /**
  * My first plugin.
  *
- * @package My_Plugin
+ * @package My_First_Plugin
  */
 
 /*
-Plugin Name: My Plugin
+Plugin Name: My First Plugin
 Description: My first plugin.
 Version: 1.0.0
 Author: Thomas Rose
