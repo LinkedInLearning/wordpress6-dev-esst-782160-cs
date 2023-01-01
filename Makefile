@@ -42,5 +42,6 @@ node:
 	docker run -it --rm \
     --volumes-from wp6-training \
     --network container:wp6-training \
+    --workdir /var/www/html/wp-content/themes/rosegarden \
     node:19 bash
 
