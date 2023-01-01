@@ -17,4 +17,7 @@ done
 
 sudo chmod 777 htdocs/ -R 
 make update-wp-config 
+
+# wait until the database is up and running
+sleep 30
 make install 2> log2.txt 1>log1.txt
