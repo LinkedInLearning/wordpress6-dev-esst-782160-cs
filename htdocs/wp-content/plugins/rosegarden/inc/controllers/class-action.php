@@ -12,7 +12,7 @@ namespace Rosegarden\Controllers;
  */
 class Action {
 	/**
-	 * Adds words to the title.
+	 * Get arbitrary info via AJAX.
 	 *
 	 * @param string $title Old title.
 	 */

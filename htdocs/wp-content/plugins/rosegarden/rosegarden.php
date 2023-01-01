@@ -35,4 +35,4 @@ add_filter( 'the_title', array( 'Rosegarden\Controllers\Page', 'title' ) );
 // Ajax actions.
 add_filter( 'the_content', array( 'Rosegarden\Controllers\Page', 'getinfo' ) );
 add_action( 'wp_ajax_rosegarden', array( 'Rosegarden\Controllers\Action', 'get_info' ) );
-add_action( 'wp_ajax_nopriv_rosegarden', array( 'Rosegarden\Controllers 	\Action', 'get_info' ) );
+add_action( 'wp_ajax_nopriv_rosegarden', array( 'Rosegarden\Controllers\Action', 'get_info' ) );
