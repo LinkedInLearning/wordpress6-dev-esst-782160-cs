@@ -20,7 +20,7 @@ make update-wp-config
 
 # retry until database is up and running
 while true; do
-    make install 1>log1.txt
+    make install
     if [ $? -eq 0 ]; then
         break
     fi
