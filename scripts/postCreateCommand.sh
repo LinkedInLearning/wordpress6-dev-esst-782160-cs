@@ -20,6 +20,6 @@ make update-wp-config
 
 # wait until the database is up and running
 sleep 30
-make install
+make install 1>log1.txt
 make set-language-de
 make delete-akismet
