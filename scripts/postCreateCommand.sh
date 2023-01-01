@@ -16,4 +16,5 @@ do
 done
 
 sudo chmod 777 htdocs/ -R 
-make update-wp-config install
+make update-wp-config 
+make install 2> log2.txt 1>log1.txt
