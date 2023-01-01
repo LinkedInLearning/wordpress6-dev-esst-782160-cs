@@ -29,9 +29,6 @@ add_action( 'save_post', array( 'Rosegarden\Controllers\CustomPostType', 'save_m
 // Shortcodes.
 add_shortcode( 'hello', array( 'Rosegarden\Controllers\Shortcode', 'hello' ) );
 
-// Widget.
-add_action( 'widgets_init', array( 'Rosegarden\Controllers\Widget', 'init' ) );
-
 // Change title.
 add_filter( 'the_title', array( 'Rosegarden\Controllers\Page', 'title' ) );
 

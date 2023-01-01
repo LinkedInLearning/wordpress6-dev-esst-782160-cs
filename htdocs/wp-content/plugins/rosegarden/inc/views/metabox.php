@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignoreFile WordPress.WP.I18n
 /**
- * Templatefile for Widget
+ * Templatefile for Metabox
  *
  * @package Rosegarden
  */

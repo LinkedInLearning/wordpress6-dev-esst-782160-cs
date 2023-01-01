@@ -13,5 +13,4 @@ return array(
     'Rosegarden\\Controllers\\Settings' => $baseDir . '/inc/controllers/class-settings.php',
     'Rosegarden\\Controllers\\Shortcode' => $baseDir . '/inc/controllers/class-shortcode.php',
     'Rosegarden\\Controllers\\Translation' => $baseDir . '/inc/controllers/class-translation.php',
-    'Rosegarden\\Controllers\\Widget' => $baseDir . '/inc/controllers/class-widget.php',
 );
