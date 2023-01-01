@@ -18,8 +18,8 @@ done
 sudo chmod 777 htdocs/ -R 
 make update-wp-config 
 
-# wait until the database is up and running
-sleep 30
+# wait until the database might be up and running
+sleep 60
 make install 1>log1.txt
 make set-language-de
 make delete-akismet
