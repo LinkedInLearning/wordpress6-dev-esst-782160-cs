@@ -20,8 +20,9 @@ Sie benötigen die folgende Software auf Ihrem Computer
 - [Visual Studio Code (oder eine andere IDE)](https://code.visualstudio.com/)
 - [Docker](https://docs.docker.com/get-docker/)
 - php
-- evtl. [composer](https://getcomposer.org/)
-- evtl. [node](https://nodejs.org)
+- evtl. [Composer](https://getcomposer.org/)
+- evtl. [Node](https://nodejs.org)
+- 
 ### Installation
 #### Hochfahren des Projektes
 - ggf. forken Sie dieses Repo
