@@ -15,19 +15,19 @@ Anschließend können Sie Ihren Codespace nutzen und später weitaus schneller n
 
 ## Manuelles Setup
 
-### Voraussetungen
+### Voraussetzungen
 Sie benötigen die folgende Software auf Ihrem Computer
-- Visual Studio Code (oder eine andere IDE)
-- Docker
+- [Visual Studio Code (oder eine andere IDE)](https://code.visualstudio.com/)
+- [Docker](https://docs.docker.com/get-docker/)
 - php
-- evtl. composer
-- evtl. node
+- evtl. [Composer](https://getcomposer.org/)
+- evtl. [Node](https://nodejs.org)
+- 
 ### Installation
 #### Hochfahren des Projektes
 - ggf. forken Sie dieses Repo
 - klonen Sie es auf Ihre lokale Maschine
-
-- Bearbeiten Sie ggf. die _.env_-Datei.
+- Bbearbeiten Sie ggf. die _.env_-Datei.
 - Starten Sie das Projekt mit dem Befehl:
 ```
 docker-compose up -d
