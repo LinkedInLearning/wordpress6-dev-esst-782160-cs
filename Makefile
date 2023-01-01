@@ -13,9 +13,12 @@ update-wp-config:
 
 install:
 	docker-compose exec --user www-data wordpress wp core install --url=https://$(CODESPACE_NAME) --title=WordPress --admin_user=admin --admin_password=password --admin_email=mail@example.com --locale=de_DE
-    
+
 set-language-de:
 	docker-compose exec --user www-data wordpress wp language core install de_DE --activate
+
+delete-akismet:
+	docker-compose exec --user www-data wordpress wp plugin delete akismet
 
 cli:
 	docker run -it --rm \
