@@ -30,4 +30,5 @@ done
 make wp-configure
 
 echo export PATH=\"\$PATH:/$CODESPACE_VSCODE_FOLDER/vendor/bin\" >> ~/.bashrc
+echo export PS1=\"$ \" >> ~/.bashrc
 source ~/.bashrc
