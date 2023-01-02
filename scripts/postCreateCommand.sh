@@ -20,16 +20,14 @@ make update-wp-config
 
 # retry until database is up and running
 while true; do
-    make install
+    make wp-install
     if [ $? -eq 0 ]; then
         break
     fi
     sleep 15
 done
 
-
-make set-language-de
-make delete-akismet
+make wp-configure
 
 echo export PATH=\"\$PATH:/$CODESPACE_VSCODE_FOLDER/vendor/bin\" >> ~/.bashrc
 source ~/.bashrc
