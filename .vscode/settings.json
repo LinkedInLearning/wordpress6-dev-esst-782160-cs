@@ -21,7 +21,7 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
-  "phpcs.enable": true,
+  "phpcs.enable": false,
   "phpcs.executablePath": "./vendor/bin/phpcs",
   //"phpcs.standard": "WordPress",
   "phpcbf.enable": true,
