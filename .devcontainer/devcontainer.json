@@ -1,6 +1,6 @@
 // Update the VARIANT arg in docker-compose.yml to pick a PHP version
 {
-	"name": "PHP & MariaDB (Community)",
+	"name": "PHP",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",

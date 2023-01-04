@@ -2,51 +2,34 @@
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs `WordPress 6 für Entwickler*innen`. Den gesamten Kurs finden Sie auf LinkedIn Learning.
 
-## Automatisches Setup mit Codespace
+## Automatisches Setup mit Codespace (empfohlen)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=564877154&machine=largePremiumLinux&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestEurope)
 
-Der Codespace wird innerhalb von ca. fünf Minuten erstellt und es öffnet sich VS Code im Browser. Anschließend werden Abhängigkeiten via _composer_ und _npm_ geladen, Erweiterungen für VS Code werden eingebunden und WordPress wird heruntergeladen. Dieser Vorgang kann weitere fünf Minuten dauern.
+Der Codespace wird innerhalb von ca. zwei bis drei Minuten erstellt und es öffnet sich VS Code im Browser. Anschließend werden Abhängigkeiten via _composer_ und _npm_ geladen, Erweiterungen für VS Code werden eingebunden und WordPress wird installiert. Dieser Vorgang dauert erstmalig weitere zwei bis drei Minuten.
 
-Sobald das Terminal vom _postCreateCommand_ wieder freigegeben ist, führen Sie bitte einmalig 
-```make install``` aus. Damit wird WordPress installiert.
-
-Anschließend können Sie Ihren Codespace nutzen und später weitaus schneller neu laden.
-
+Sobald das Terminal vom _postCreateCommand_ wieder freigegeben ist, ist Ihre lokale Entwicklungsumgebung in der Cloud einsatzbereit. Ihre WordPress-Installation ist im Reiter _Ports_ verlinkt, ins Backend können Sie sich mit _admin_/_password_ einloggen. DIe Zugangsdaten finden Sie auch im _Makefile_.
 
 ## Manuelles Setup
 
-> **_Hinweis:_**  Die folgenden Hinweise 
-sind in englischer Sprache. Englisch ist die _Lingua franca_ in der WordPress-Programmierung. Im Training gehe ich auf die einzelnen Abschnitte ein und erkläre sie auf deutsch.
-
-### Requirements
-You should have installed the following software on your local machine
-- Visual Studio Code ( or some other IDE)
-- docker
+### Voraussetzungen
+Sie benötigen die folgende Software auf Ihrem Computer
+- [Visual Studio Code (oder eine andere IDE)](https://code.visualstudio.com/)
+- [Docker](https://docs.docker.com/get-docker/)
 - php
-- composer
-- node
-### Installation
-#### Bringing up the project
-- Fork this repo and clone it to your local machine.
+- evtl. [Composer](https://getcomposer.org/)
+- evtl. [Node](https://nodejs.org)
 
-- Edit the _.env_ fill to fit to your needs.
-- Bring up the project with the CLI-command (Repeat the following step after each reboot)
+### Installation
+#### Hochfahren des Projektes
+- ggf. forken Sie dieses Repo
+- klonen Sie es auf Ihre lokale Maschine
+- Bbearbeiten Sie ggf. die _.env_-Datei.
+- Starten Sie das Projekt mit dem Befehl:
 ```
 docker-compose up -d
 ```
-#### Install dependecies
+#### Installieren Sie Abhängigkeiten mit
 ```
 npm install
 composer install
-```
-
-## Linting
-### php
-```
-./vendor/bin/phpcs -s path/to/file.php
-```
-
-### JavaScript
-```
-npx eslint path/to/file.js
 ```

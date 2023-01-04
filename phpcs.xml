@@ -3,7 +3,6 @@
     <exclude-pattern>/vendor/*</exclude-pattern>
     <exclude-pattern>*.js</exclude-pattern>
 
-
     <rule ref="WordPress">
         <exclude name="Generic.Files.LineEndings"/>
     </rule>

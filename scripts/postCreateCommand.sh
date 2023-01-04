@@ -17,4 +17,18 @@ done
 
 sudo chmod 777 htdocs/ -R 
 make update-wp-config 
-make install 2> log2.txt 1>log1.txt
+
+# retry until database is up and running
+while true; do
+    make wp-install
+    if [ $? -eq 0 ]; then
+        break
+    fi
+    sleep 15
+done
+
+make wp-configure
+
+echo export PATH=\"\$PATH:/$CODESPACE_VSCODE_FOLDER/vendor/bin\" >> ~/.bashrc
+echo export PS1=\"$ \" >> ~/.bashrc
+source ~/.bashrc
