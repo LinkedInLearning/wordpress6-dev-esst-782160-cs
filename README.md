@@ -45,7 +45,7 @@ composer install
 
 **Thomas Rose**
 
-_Medienpädagogoe_
+_Medienpädagoge_
 
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/thomas-rose) an.
 
