@@ -51,4 +51,4 @@ Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linke
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/wordpress-6-fur-entwickler-grundlagen
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/C560DAQE3JzKLKNBYVg/learning-public-crop_675_1200/0/1679302210303?e=2147483647&v=beta&t=vGe7_isu_I8-0CtoOimVCD-hwuWIo7lMDpVWZd6BsUc
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/C4E0DAQGKJbZX6DOtGQ/learning-public-crop_675_1200/0/1679479280475?e=2147483647&v=beta&t=pNN53hZi_4mYL77NArRuMFOHBoaVXdOJVwdJAHz3FiQ
