@@ -1,8 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/php:0-7.4
 
-# Install MariaDB client
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get clean -y && rm -rf /var/lib/apt/lists/*
+RUN export DEBIAN_FRONTEND=noninteractive
 
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
 ARG NODE_VERSION="16"
